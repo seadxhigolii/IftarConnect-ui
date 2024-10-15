@@ -1,0 +1,22 @@
+@import 'assets/css/plugins.min.css';
+@import 'assets/css/kaiadmin.min.css';
+@import 'assets/css/fonts.min.css';
+
+
+.navbar-header {
+    transform: translate3d(0, 0, 0) !important;
+    background: #fff !important; 
+
+}
+
+
+:host ::ng-deep {
+    .p-progressbar {
+        height: .5rem;
+        background-color: #D8DADC;
+    
+        .p-progressbar-value {
+            background-color: #607D8B;
+        }
+    }
+}
