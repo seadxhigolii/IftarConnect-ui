@@ -8,12 +8,16 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       {
-        path: 'notifications',
-        loadChildren: () => import('./notifications/notifications.module').then(m => m.NotificationsModule)
+        path: '',
+        loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
       },
       {
-        path: 'settings',
-        loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule)
+        path: 'notifications',
+        loadChildren: () => import('./notifications/notifications.module').then(m => m.NotificationsModule)
+      },  
+      {
+        path: 'home',
+        loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
       }
     ]
   }

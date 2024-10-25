@@ -1,13 +1,13 @@
-@import 'assets/css/plugins.min.css';
-@import 'assets/css/kaiadmin.min.css';
-@import 'assets/css/fonts.min.css';
-
+@import '../../assets/css/plugins.min.css';
+@import '../../assets/css/kaiadmin.min.css';
+@import '../../assets/css/fonts.min.css';
 
 .navbar-header {
     transform: translate3d(0, 0, 0) !important;
     background: #fff !important; 
 
 }
+
 
 :host ::ng-deep {
     .p-progressbar {
@@ -18,8 +18,8 @@
             background-color: #607D8B;
         }
     }
-}
 
-.current-page {
-    margin-top: 37px;
+    .page-inner {
+        margin-top: 37px;
+    }
 }

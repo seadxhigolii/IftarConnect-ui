@@ -7,18 +7,19 @@ import { UserProfileComponent } from './dashboard/user-profile/user-profile.comp
 import { HomeComponent } from './dashboard/home/home.component';;
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent,
-    HomeComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
