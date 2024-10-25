@@ -15,7 +15,6 @@ import { LayoutModule } from './layout/layout.module';
 @NgModule({
   declarations: [
     DashboardComponent,
-    AppointmentsComponent,
     ProfileComponent,
     SettingsComponent
   ],
