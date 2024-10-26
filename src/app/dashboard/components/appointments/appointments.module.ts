@@ -32,4 +32,9 @@ import { AppointmentsComponent } from './appointments.component';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class AppointmentsModule { }
+export class AppointmentsModule {
+
+    constructor() {
+        console.log('AppointmentsModule loaded');
+      }
+ }

@@ -5,7 +5,6 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { DashboardComponent } from './dashboard.component';
 import { InputTextModule } from 'primeng/inputtext';
-import { AppointmentsComponent } from './components/appointments/appointments.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { RouterModule } from '@angular/router';

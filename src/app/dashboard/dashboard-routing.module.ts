@@ -12,16 +12,16 @@ const routes: Routes = [
         loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
       },
       {
+        path: 'appointments',
+        loadChildren: () => import('./components/appointments/appointments.module').then(m => m.AppointmentsModule)
+      },
+      {
         path: 'notifications',
         loadChildren: () => import('./notifications/notifications.module').then(m => m.NotificationsModule)
-      },  
+      },
       {
         path: 'home',
         loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
-      },  
-      {
-        path: 'appointments',
-        loadChildren: () => import('./components/appointments/appointments.module').then(m => m.AppointmentsModule)
       }
     ]
   }

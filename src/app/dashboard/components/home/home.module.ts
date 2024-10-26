@@ -32,4 +32,8 @@ import { HomeComponent } from './home.component';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class HomeModule { }
+export class HomeModule { 
+
+  constructor() {
+      console.log('HomeModule loaded');
+    }}

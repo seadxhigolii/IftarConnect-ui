@@ -14,35 +14,35 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
       <div class="sidebar-content">
         <ul class="nav nav-secondary">
-          <li class="nav-item active">
+          <li class="nav-item" [ngClass]="{'active': isActive('/dashboard/home')}">
             <a
-              href="#dashboard"
+              href="dashboard/home"
               aria-expanded="false"
             >
               <i class="fas fa-home"></i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#base">
+          <li class="nav-item" [ngClass]="{'active': isActive('/dashboard/appointments')}">
+            <a href="dashboard/appointments">
               <i class="fas fa-calendar-alt"></i>
               <p>Appointments</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#sidebarLayouts">
+          <li class="nav-item" [ngClass]="{'active': isActive('/dashboard/profile')}">
+            <a href="dashboard/profile">
               <i class="fas fa-user"></i>
               <p>Profile</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#forms">
+          <li class="nav-item" [ngClass]="{'active': isActive('/dashboard/settings')}">
+            <a href="dashboard/settings">
               <i class="fas fa-cog"></i>
               <p>Settings</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#tables">
+            <a>
               <i class="fas fa-power-off"></i>
               <p>Logout</p>
             </a>
